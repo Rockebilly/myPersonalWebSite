@@ -1,0 +1,270 @@
+
+
+.afacad-flux {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+
+
+
+.pacifico-regular {
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: rgb(42, 127, 254);
+  }
+  
+
+#header {
+    background-color: rgb(219, 252, 224);
+}
+
+.heading {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%
+}
+
+.headingStyle1 {
+    font-size: 45px ; 
+    font-family:"Afacad Flux"; 
+    color:  rgb(42, 127, 254);
+}
+
+.headingStyle2 {
+    font-size: 22px ; 
+    font-family:sans-serif; 
+    color:  rgb(42, 127, 254);
+    font-weight: bolder;
+}
+
+.firstBalloon {
+    display: flex;    
+    justify-content: start;  
+}
+
+.balloonOne {
+    position: relative;
+    left: 200px ;
+}
+
+.secondBalloon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.balloonTwo {
+    position: relative;
+    right:250px;
+    top:20px;
+    z-index:1
+}
+
+.road {
+    margin-bottom: -71px;
+}
+
+.roadPic {
+    position: relative;
+    top: -60px;
+    z-index: 0;
+}
+
+.myPic {
+    border-radius: 50%;
+}
+
+#biography{
+    text-align: center;
+}
+
+p {
+    font-family:'Trebuchet MS', sans-serif;    
+    color:grey;
+    font-size:larger;
+}
+
+span {
+    color: rgb(251, 47, 47);
+    font-weight: bold;
+}
+
+#resume {   
+    text-align: justify;
+    background-color: rgb(239, 251, 240);    
+}
+
+.resumeflex {
+    display: flex;
+    justify-content: center;
+}
+
+.heading1 {
+    text-align: center;
+}
+
+.skills {
+    width: 60%;
+}
+
+.skills > img {
+    float: left;
+    margin-right: 30px;
+    /* margin-bottom: 10px; */
+}
+
+.java.skills > img {
+    position: relative;
+    top:-30px
+}
+
+.java {
+    margin-top: 50px;
+}
+
+#portfolio {
+    text-align: center;
+}
+
+.box_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6fr 1fr;
+    gap: 7px;  
+}
+
+.image_Box {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#portfolio img {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.hobbybox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:30px;
+    row-gap: 70px;
+}
+
+.hobbyPics {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hobbybox h4 {
+    margin-top: 25px;
+}
+
+.hobbybox h4.extraIndent {
+    margin-top: 45px;
+}
+
+#contactMe {
+    text-align: center;
+}
+
+#contactMe .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerbox {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: larger;
+}
+
+@media (max-width: 992px) {
+
+    .java.skills > img {
+            top:0px
+        }
+
+    .box_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr 1fr 6fr 1fr ;
+        gap: 7px;  
+    }
+
+    .gun {
+        order:1
+    }
+
+    .gun_text {
+        order:2
+    }
+
+
+    .hobbybox {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1.5fr 1fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1fr;
+        gap:30px;
+        text-align: center;
+    }
+
+    .hobbyPics {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .hobbybox h4 {
+        margin-top: 0px;
+    }
+    
+    .hobbybox h4.extraIndent {
+        margin-top: 0px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .skills > img {
+        float: none;
+        margin-right: 30px;
+        margin-bottom: 12px;
+    }    
+
+    .animation > img {
+        margin-bottom: 15px;
+    }
+
+    .java {
+        margin-top: 20px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;              
+    }       
+   
+    .animation > img {
+        margin-left: 30px;
+    }
+
+}
